@@ -1,9 +1,8 @@
-__author__ = 'chenke'
-
-
-
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+
+__author__ = 'chenke'
+
 import os
 from PIL import Image, ImageDraw
 import cv2.cv as cv
@@ -12,6 +11,7 @@ def detect_object(image):
 
 
 
+    '''检测图片，获取人脸在图片中的坐标'''
     grayscale = cv.CreateImage((image.width, image.height), 8, 1)
     cv.CvtColor(image, grayscale, cv.CV_BGR2GRAY)
 
@@ -27,6 +27,7 @@ def detect_object(image):
     return result
 
 def process(infile):
+    '''在原图上框出头像并且截取每个头像到单独文件夹'''
     image = cv.LoadImage(infile);
     if image:
         faces = detect_object(image)
