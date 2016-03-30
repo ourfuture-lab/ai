@@ -1,21 +1,18 @@
-__author__ = 'chenke'
-
-
-
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+
+__author__ = 'chenke'
+
 import os
 from PIL import Image, ImageDraw
 import cv2.cv as cv
 
 def detect_object(image):
-
-
-
+    '''检测图片，获取人脸在图片中的坐标'''
     grayscale = cv.CreateImage((image.width, image.height), 8, 1)
     cv.CvtColor(image, grayscale, cv.CV_BGR2GRAY)
 
-    cascade = cv.Load("./haarcascadeGPU/haarcascade_frontalface_alt2.xml")
+    cascade = cv.Load("./haarcascadeGPU/haarcascade_frontalface_alt_tree.xml")
     #cascade=cv.Load("./lbpcascades/lbpcascade_frontalface.xml")
     rect = cv.HaarDetectObjects(grayscale, cascade, cv.CreateMemStorage(), 1.1, 2,
         cv.CV_HAAR_DO_CANNY_PRUNING, (20,20))
@@ -27,11 +24,13 @@ def detect_object(image):
     return result
 
 def process(infile):
+    '''在原图上框出头像并且截取每个头像到单独文件夹'''
     image = cv.LoadImage(infile);
     if image:
         faces = detect_object(image)
 
     im = Image.open(infile)
+
     path = os.path.abspath(infile)
     save_path = os.path.splitext(path)[0]+"_face"
     try:
