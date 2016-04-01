@@ -1,0 +1,40 @@
+﻿生成启动时间为 2016/3/11 15:08:55。
+     1>项目“E:\vscode\opencv\opencv\opencv.vcxproj”在节点 2 上(build 个目标)。
+     1>PrepareForBuild:
+         正在创建目录“E:\vscode\opencv\Release\”。
+       InitializeBuildStatus:
+         正在创建“Release\opencv.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         d:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt accessPixel.cpp basicShape.cpp imgInputShowOutput.cpp imwrite.cpp matTest.cpp mouseOp.cpp opencvPicBasic.cpp opencvVideoBasic.cpp trackbar.cpp
+         accessPixel.cpp
+         basicShape.cpp
+         imgInputShowOutput.cpp
+         imwrite.cpp
+         matTest.cpp
+         mouseOp.cpp
+         opencvPicBasic.cpp
+         opencvVideoBasic.cpp
+         trackbar.cpp
+       Link:
+         d:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\vscode\opencv\Release\opencv.exe" /INCREMENTAL:NO /NOLOGO opencv_calib3d247d.lib opencv_contrib247d.lib opencv_core247d.lib opencv_features2d247d.lib opencv_flann247d.lib opencv_gpu247d.lib opencv_highgui247d.lib opencv_imgproc247d.lib opencv_legacy247d.lib opencv_ml247d.lib opencv_nonfree247d.lib opencv_objdetect247d.lib opencv_ocl247d.lib opencv_photo247d.lib opencv_stitching247d.lib opencv_superres247d.lib opencv_ts247d.lib opencv_video247d.lib opencv_videostab247d.lib opencv_calib3d247.lib opencv_contrib247.lib opencv_core247.lib opencv_features2d247.lib opencv_flann247.lib opencv_gpu247.lib opencv_highgui247.lib opencv_imgproc247.lib opencv_legacy247.lib opencv_ml247.lib opencv_nonfree247.lib opencv_objdetect247.lib opencv_ocl247.lib opencv_photo247.lib opencv_stitching247.lib opencv_superres247.lib opencv_ts247.lib opencv_video247.lib opencv_videostab247.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\opencv.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\vscode\opencv\Release\opencv.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\vscode\opencv\Release\opencv.lib" /MACHINE:X86 Release\accessPixel.obj
+         Release\basicShape.obj
+         Release\imgInputShowOutput.obj
+         Release\imwrite.obj
+         Release\matTest.obj
+         Release\mouseOp.obj
+         Release\opencvPicBasic.obj
+         Release\opencvVideoBasic.obj
+         Release\trackbar.obj
+         正在生成代码
+         已完成代码的生成
+         opencv.vcxproj -> E:\vscode\opencv\Release\opencv.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"E:\vscode\opencv\Release\opencv.exe;#1" /manifest Release\opencv.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“Release\opencv.unsuccessfulbuild”。
+         正在对“Release\opencv.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“E:\vscode\opencv\opencv\opencv.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:05.74
