@@ -35,6 +35,7 @@ def process(infile):
     save_path = os.path.splitext(path)[0]+"_face"
     try:
         os.mkdir(save_path)
+
     except:
         pass
     if faces:
