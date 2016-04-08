@@ -35,6 +35,7 @@ def process(infile):
     save_path = os.path.splitext(path)[0]+"_face"
     try:
         os.mkdir(save_path)
+
     except:
         pass
     if faces:
@@ -42,6 +43,8 @@ def process(infile):
         count = 0
         for f in faces:
             count += 1
+
+
             draw.rectangle(f, outline=(255, 0, 0))
             a = im.crop(f)
             file_name = os.path.join(save_path,str(count)+".jpg")
@@ -54,4 +57,4 @@ def process(infile):
         print "Error: cannot detect faces on %s" % infile
 
 if __name__ == "__main__":
-    process("tyhy.jpg")
+    process("tyhy.jpg");
